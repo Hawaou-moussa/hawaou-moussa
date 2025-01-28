@@ -1,15 +1,12 @@
-#include "SampleLib.h"
-// Définition d'une fonction de calcul de factorielle.
-unsigned int fact( unsigned int value ) {
- unsigned int result = 1;
- while ( value > 1 ) {
- result *= value;
- value --;
- }
- return result;
-}
-// Définition d'une fonction d'élévation à une puissance données.
-int power( int value, unsigned int pow ) {
- if ( pow == 0 ) return 1;
- if ( pow == 1 ) return value
- }
+#ifndef LIBRY_H
+#define LIBRY_H
+void afficherBonjour();
+int inverserEntier(int n);
+float produitDeuxReels(float a, float b);
+int estPair(int n);
+const char* comparerEntiers(int a, int b);
+void trierTroisEntiers(int *a, int *b, int *c);
+void permuterChar(char *a, char *b);
+int somme(int a, int b);
+
+#endif
